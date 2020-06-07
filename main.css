@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(assets/bgmmain.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-box {
+    min-height: 70vh;
+    background-image: url(assets/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 0 1 70%;
+}
+
+button {
+    font-size: large;
+    padding: 0.7rem;
+    border-radius: 50px;
+    outline: none;
+    background-color: lightblue;
+}
+
+button:hover {
+    background-color: rgb(49, 49, 202);
+    cursor: pointer;
+}
+
+.btn-prev {
+    position: absolute;
+    top: 50vh;
+    transform: translate(-10vh,-3vh);
+}
+
+.btn-next {
+    position: absolute;
+    top: 50vh;
+    right: 0;
+    transform: translate(-25vh,-2vh);
+}
+@media only screen and (max-width:600px){
+
+    .btn-next {
+   
+        transform: translate(0%,-40%);
+    }
+    
+
+}
